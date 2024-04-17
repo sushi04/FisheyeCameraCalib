@@ -17,7 +17,7 @@ This script captures frames from a video stream obtained from an RTSP link, dete
 
 ## Usage
 
-1. Run the script `calibrate_camera.py`.
+1. Run the script `video_calibration.py`.
 2. Enter the camera ID when prompted.
 3. Ensure that the RTSP link is accessible and providing a video stream.
 4. The script will capture frames from the video stream, detect checkerboard corners, and perform camera calibration.
