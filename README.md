@@ -1,8 +1,5 @@
 # FisheyeCameraCalib
 
-# Video_calibration.py
-This script captures frames from a video stream obtained from an RTSP link, detects a checkerboard pattern in the frames, and performs camera calibration using the detected corners.
-
 ## Requirements
 
 - Python 3.x
@@ -13,6 +10,10 @@ This script captures frames from a video stream obtained from an RTSP link, dete
 
 1. Install Python 3.x if not already installed.
 2. Install required packages using pip:
+
+# Video_calibration.py
+This script captures frames from a video stream obtained from an RTSP link, detects a checkerboard pattern in the frames, and performs camera calibration using the detected corners.
+
 
 ## Usage
 
@@ -28,5 +29,22 @@ This script captures frames from a video stream obtained from an RTSP link, dete
 - Adjust the parameters such as the RTSP link, output directory, checkerboard dimensions, and calibration flags as needed for your specific setup.
 
 # Videostream.py
+This Script undistorts the video stream using calibration data stored by the video_calibration.py.
+
+## Usage
+
+1. Ensure that you have a camera calibrated and have saved the calibration data (`calibration_data.npz`).
+2. Update the script with the correct file path to the calibration data.
+3. Set the correct RTSP link for the video stream.
+4. Run the script `videostreaming.py`.
+5. The script will capture the video stream, undistort each frame in real-time using the provided calibration data, and display the undistorted video.
+6. Press the 'q' key to exit the program.
+
+## Additional Notes
+
+- Ensure that the camera is properly calibrated and the calibration data is accurate for effective undistortion.
+- Adjust the RTSP link and other parameters as needed for your specific camera setup.
+- The script may need adjustments depending on the camera model and calibration process used.
+- Make sure your system supports RTSP video streaming and has access to the provided RTSP link.
 
 
