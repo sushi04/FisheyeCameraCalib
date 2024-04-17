@@ -33,7 +33,7 @@ This Script undistorts the video stream using calibration data stored by the vid
 
 ## Usage
 
-1. Ensure that you have a camera calibrated and have saved the calibration data (`calibration_data.npz`).
+1. Ensure that you have a camera calibrated and have saved the calibration data (`calibration_data_{camId}.npz`).
 2. Update the script with the correct file path to the calibration data.
 3. Set the correct RTSP link for the video stream.
 4. Run the script `videostreaming.py`.
